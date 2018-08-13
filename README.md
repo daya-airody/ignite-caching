@@ -12,6 +12,7 @@ update the below keys according to your db, in application.properties at \src\ma
 spring.datasource.url=jdbc:postgresql://localhost:5432/partnertap
   
 spring.datasource.username=daya
+
 spring.datasource.password=partnertap
 </blockquote>
 
@@ -23,14 +24,18 @@ mvn clean install
 ./startup.sh
 6) Access below URL: 
 http://localhost:8080/canned/samplerepslist?managerId=100
+
 First time, it works.
 Second time also, it works.
 
 In this case, we are caching an object we created within the service method call.
 7) Access below URL:
 http://localhost:8080/canned/allrepslist?managerId=100
+
+<p>
 First time, it works.
 Try again. it fails with exception related to proxy method invocation.
 In this case, we are caching an object returned by spring JPA.
 I have tested both using ConcurrentMapCache. I am able to retrieve objects returned by spring JPA from the cache correctly.
 Looks like Ignite is not handling objects returned by spring JPA correctly.
+ </p>
