@@ -8,9 +8,11 @@ ignite.bat %IGNITE_HOME%/examples/config/example-cache.xml
 3) create a postgresql db and user.
 update the below keys according to your db, in application.properties at \src\main\resources.
 
+<blockquote>
 spring.datasource.url=jdbc:postgresql://localhost:5432/partnertap
 spring.datasource.username=daya
 spring.datasource.password=partnertap
+</blockquote>
 
 connect to your postgresql database and run below sql script
 scripts/setup_db.sql
