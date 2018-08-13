@@ -10,6 +10,7 @@ update the below keys according to your db, in application.properties at \src\ma
 
 <blockquote>
 spring.datasource.url=jdbc:postgresql://localhost:5432/partnertap
+  
 spring.datasource.username=daya
 spring.datasource.password=partnertap
 </blockquote>
