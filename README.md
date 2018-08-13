@@ -18,10 +18,13 @@ spring.datasource.password=partnertap
 
 connect to your postgresql database and run below sql script
 scripts/setup_db.sql
+
 4) Build the application
 mvn clean install
+
 5) Run the application
 ./startup.sh
+
 6) Access below URL: 
 http://localhost:8080/canned/samplerepslist?managerId=100
 
@@ -29,6 +32,7 @@ First time, it works.
 Second time also, it works.
 
 In this case, we are caching an object we created within the service method call.
+
 7) Access below URL:
 http://localhost:8080/canned/allrepslist?managerId=100
 
