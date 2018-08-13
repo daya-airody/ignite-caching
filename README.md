@@ -40,6 +40,6 @@ http://localhost:8080/canned/allrepslist?managerId=100
 First time, it works.
 Try again. it fails with exception related to proxy method invocation.
 In this case, we are caching an object returned by spring JPA.
-I have tested both using ConcurrentMapCache. I am able to retrieve objects returned by spring JPA from the cache correctly.
+I have tested both using ConcurrentMapCache. I am able to retrieve objects returned by spring JPA from the cache correctly when using ConcurrentMapCache.
 Looks like Ignite is not handling objects returned by spring JPA correctly.
  </p>
